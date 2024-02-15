@@ -1,0 +1,17 @@
+/***
+Customized Bootstrap Close Icon
+***/
+
+$general-img-path: '/vendor/core/core/base/images/' !default;
+
+.close {
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 0;
+    width: 9px;
+    height: 9px;
+    background-repeat: no-repeat !important;
+    text-indent: -10000px;
+    outline: none;
+    background-image: url("#{$general-img-path}remove-icon-small.png") !important;
+}

@@ -1,0 +1,56 @@
+/*=======  CONTACT   =======*/
+.contact-part {
+	/*=======  CONTACT Info box =======*/
+	.contact-info {
+		.info-box {
+			padding: 50px 45px;
+			background-color: $white;
+			display: grid;
+			grid-template-rows: 1fr;
+			grid-template-columns: 40px 1fr;
+			margin-bottom: 30px;
+			grid-column-gap: 30px;
+
+			@media #{$lg} {
+				padding: 50px 30px;
+				grid-template-columns: 30px 1fr;
+			}
+			@media #{$sm} {
+				display: block;
+				padding: 30px 20px;
+			}
+			.icon {
+				font-size: 40px;
+				color: $primary-color;
+				@media #{$sm} {
+					margin-bottom: 15px;
+				}
+			}
+			.desc {
+				h4 {
+					font-size: 24px;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+
+	.contact-maps {
+		height: 700px;
+		width: 100%;
+	}
+
+	.contact-form {
+		background-color: $white;
+		padding: 100px;
+		@media #{$md} {
+			padding: 50px;
+		}
+		@media #{$sm} {
+			padding: 50px;
+		}
+		.main-btn.btn-filled {
+			box-shadow: none;
+		}
+	}
+}

@@ -1,0 +1,515 @@
+/*=======  COMMON CSS  =======*/
+
+body {
+	font-family: $archivo;
+	font-weight: normal;
+	font-style: normal;
+	color: $text-color;
+	overflow-x: hidden;
+	font-size: 16px;
+	line-height: 1.6;
+	background-color: $main-bg;
+	@media #{$tiny} {
+		font-size: 14px;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	@include box-sizing(border-box);
+}
+
+img {
+	max-width: 100%;
+	@include transition(0.4s);
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus,
+.slick-initialized .slick-slide:focus,
+.btn:focus {
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+}
+
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+
+i,
+span,
+a {
+	display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $oldstan;
+	font-weight: 400;
+	margin: 0px;
+	&,
+	a {
+		color: $heading-color;
+	}
+}
+
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul,
+ol {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+p {
+	margin: 0px;
+}
+
+a {
+	@include transition(0.3s);
+	&,
+	&:hover {
+		color: $primary-color;
+	}
+}
+
+input,
+select,
+textarea,
+select {
+	border: none;
+	width: 100%;
+	height: 70px;
+	background-color: $main-bg;
+	padding: 0 40px;
+}
+
+textarea {
+	height: 250px;
+	padding-top: 25px;
+}
+
+::placeholder,
+input,
+textarea,
+select {
+	font-family: $roboto;
+	color: #777777;
+}
+
+.nice-select {
+	width: 100%;
+	background-color: transparent;
+	border-radius: 0;
+	position: relative;
+	border: none;
+	height: 70px;
+	padding-left: 50px;
+	line-height: 70px;
+	.list {
+		width: 100%;
+		border-radius: 0;
+		li {
+			line-height: 35px;
+			color: $text-color;
+			&:hover,
+			&.option:hover {
+				background-color: $primary-color;
+				color: $white;
+			}
+		}
+	}
+	&::after {
+		display: none;
+	}
+	&::before {
+		content: '\f063';
+		font-family: 'Font Awesome 5 Pro';
+		font-weight: 300;
+		position: absolute;
+		left: 30px;
+		top: 50%;
+		color: $primary-color;
+		transform: translateY(-50%);
+	}
+}
+
+.input-group {
+	input,
+	select,
+	textarea,
+	select {
+		padding-left: 80px;
+	}
+	label {
+		font-size: 14px;
+		font-weight: 700;
+		margin-bottom: 10px;
+		color: $heading-color;
+		display: block;
+	}
+	.icon {
+		position: absolute;
+		left: 40px;
+		bottom: 35px;
+		color: $primary-color;
+		transform: translateY(50%);
+	}
+	&.textarea {
+		.icon {
+			top: 25px;
+			bottom: auto;
+			transform: translateY(0);
+		}
+	}
+	.nice-select {
+		padding-left: 80px;
+		&::before {
+			left: 40px;
+		}
+	}
+
+	&.input-group-two {
+		input,
+		select,
+		textarea,
+		select {
+			height: 60px;
+			padding: 0px 50px 0 30px;
+			background-color: $white;
+			color: $text-color;
+		}
+		::placeholder {
+			opacity: 1;
+			color: $text-color;
+		}
+		.icon {
+			left: auto;
+			bottom: 30px;
+			right: 30px;
+		}
+		.nice-select {
+			background-color: $white;
+			padding: 0 50px 0 30px;
+			height: 60px;
+			line-height: 60px;
+			&::before {
+				left: auto;
+				right: 30px;
+			}
+		}
+	}
+}
+
+/*=======  COMMON CLASS  =======*/
+.container-custom-one {
+	@media #{$xxl} {
+		max-width: 1600px;
+	}
+}
+
+.container-custom-two {
+	@media #{$xxl} {
+		max-width: 1400px;
+	}
+}
+
+.container-custom-three {
+	@media #{$xxl} {
+		max-width: 1420px;
+	}
+}
+
+.slick-slide img {
+	display: inline-block;
+}
+
+.bg-black {
+	background-color: $heading-color;
+}
+
+.main-btn {
+	display: inline-block;
+	font-weight: 700;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	@include user-select(none);
+	padding: 0 48px;
+	font-size: 14px;
+	line-height: 60px;
+	border-radius: 0px;
+	cursor: pointer;
+	@include transition(0.4s);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: $text-color;
+	border: 2px solid $primary-color;
+	&.btn-filled {
+		background-color: $primary-color;
+		color: $white;
+		box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.4);
+		&:hover {
+			background-color: transparent;
+			color: $text-color;
+			box-shadow: none;
+		}
+	}
+	&.btn-border {
+		border-color: $primary-color;
+		&:hover {
+			background-color: $primary-color;
+			color: $white;
+			box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.4);
+		}
+	}
+}
+
+.section-title {
+	span.title-tag {
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		padding-bottom: 20px;
+		@media #{$sm} {
+			letter-spacing: 2px;
+		}
+		@media #{$tiny} {
+			font-size: 12px;
+		}
+	}
+	h2 {
+		font-size: 80px;
+		line-height: 1.125;
+		letter-spacing: -1px;
+
+		@media #{$lg} {
+			font-size: 62px;
+		}
+		@media #{$md} {
+			font-size: 52px;
+		}
+		@media #{$sm} {
+			font-size: 42px;
+		}
+		@media #{$tiny} {
+			font-size: 32px;
+		}
+	}
+	&.white-color {
+		span.title-tag {
+			color: $primary-color;
+		}
+		h2 {
+			color: $white;
+		}
+	}
+}
+
+.arrow-style {
+	display: flex;
+	justify-content: flex-end;
+	.slick-arrow {
+		height: 70px;
+		width: 70px;
+		text-align: center;
+		line-height: 70px;
+		font-size: 18px;
+		color: $black;
+		background: $white;
+		cursor: pointer;
+		@include transition(0.3s);
+		&.next-arrow {
+			margin-left: 20px;
+		}
+		&:hover,
+		&.next-arrow {
+			background-color: $primary-color;
+			color: $white;
+			box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.3);
+		}
+	}
+}
+
+/*=======  Preloader  =======*/
+
+.preloader {
+	background-color: $primary-color;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	.cssload-container {
+		display: block;
+		width: 97px;
+	}
+	.cssload-loading i {
+		width: 19px;
+		height: 19px;
+		display: inline-block;
+		border-radius: 50%;
+		background: $white;
+	}
+	.cssload-loading i:first-child {
+		opacity: 0;
+		animation: cssload-loading-ani2 0.58s linear infinite;
+		transform: translate(-19px);
+	}
+	.cssload-loading i:nth-child(2),
+	.cssload-loading i:nth-child(3) {
+		animation: cssload-loading-ani3 0.58s linear infinite;
+	}
+	.cssload-loading i:last-child {
+		animation: cssload-loading-ani1 0.58s linear infinite;
+	}
+}
+
+/*=======  ANIMATION  =======*/
+@keyframes sticky {
+	0% {
+		top: -200px;
+	}
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes pulse-border {
+	0% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1.3);
+		-moz-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+		-o-transform: scale(1.3);
+		transform: scale(1.3);
+		opacity: 0;
+	}
+}
+@keyframes pulse-border-2 {
+	0% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		transform: scale(1.5);
+		opacity: 0;
+	}
+}
+
+@keyframes cssload-loading-ani1 {
+	100% {
+		transform: translate(39px);
+		opacity: 0;
+	}
+}
+@keyframes cssload-loading-ani2 {
+	100% {
+		transform: translate(19px);
+		opacity: 1;
+	}
+}
+@keyframes cssload-loading-ani3 {
+	100% {
+		transform: translate(19px);
+	}
+}
+
+@keyframes zoomIn {
+	0% {
+		@include transform(scale(1));
+	}
+	50% {
+		@include transform(scale(1.2));
+	}
+	100% {
+		@include transform(scale(1));
+	}
+}
+
+@keyframes hvr-buzz-out {
+	10% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg);
+	}
+	20% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg);
+	}
+	30% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg);
+	}
+	40% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg);
+	}
+	50% {
+		-webkit-transform: translateX(2px) rotate(1deg);
+		transform: translateX(2px) rotate(1deg);
+	}
+	60% {
+		-webkit-transform: translateX(-2px) rotate(-1deg);
+		transform: translateX(-2px) rotate(-1deg);
+	}
+	70% {
+		-webkit-transform: translateX(2px) rotate(1deg);
+		transform: translateX(2px) rotate(1deg);
+	}
+	80% {
+		-webkit-transform: translateX(-2px) rotate(-1deg);
+		transform: translateX(-2px) rotate(-1deg);
+	}
+	90% {
+		-webkit-transform: translateX(1px) rotate(0);
+		transform: translateX(1px) rotate(0);
+	}
+	100% {
+		-webkit-transform: translateX(-1px) rotate(0);
+		transform: translateX(-1px) rotate(0);
+	}
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Gallery",
+    "namespace": "Botble\\Gallery\\",
+    "provider": "Botble\\Gallery\\Providers\\GalleryServiceProvider",
+    "author": "Botble Technologies",
+    "url": "https://botble.com",
+    "version": "5.8",
+    "description": "Create or easy to add gallery images to posts, pages..."
+}

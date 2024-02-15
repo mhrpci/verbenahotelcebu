@@ -1,0 +1,9 @@
+{
+    "name": "Hotel",
+    "namespace": "Botble\\Hotel\\",
+    "provider": "Botble\\Hotel\\Providers\\HotelServiceProvider",
+    "author": "Botble Technologies",
+    "url": "https://botble.com",
+    "version": "1.0",
+    "description": "Hotel management plugin"
+}

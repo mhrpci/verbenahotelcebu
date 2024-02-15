@@ -1,0 +1,164 @@
+/*=======  Our Menu  =======*/
+.menu-area {
+	position: relative;
+	z-index: 1;
+	&.menu-nagative-gallery {
+		padding-top: 115px;
+		margin-bottom: 305px;
+		padding-bottom: 285px;
+		@media #{$lg} {
+			margin-bottom: 230px;
+			padding-bottom: 220px;
+		}
+		@media #{$md} {
+			margin-bottom: 200px;
+			padding-bottom: 200px;
+		}
+		@media #{$sm} {
+			margin-bottom: 200px;
+			padding-bottom: 200px;
+		}
+		@media #{$xsm} {
+			margin-bottom: 230px;
+			padding-bottom: 240px;
+		}
+		.gallery-wrap {
+			position: absolute;
+			bottom: -190px;
+			width: 100%;
+			left: 0;
+			@media #{$lg} {
+				bottom: -130px;
+			}
+			@media #{$md} {
+				bottom: -100px;
+			}
+			@media #{$sm} {
+				bottom: -100px;
+			}
+			@media #{$xsm} {
+				bottom: -150px;
+			}
+		}
+	}
+
+	&.menu-with-shape {
+		.shape-one {
+			position: absolute;
+			left: 2%;
+			top: -70px;
+			max-width: 250px;
+			z-index: 2;
+			@media #{$lg} {
+				max-width: 180px;
+			}
+			@media #{$md} {
+				max-width: 180px;
+			}
+			@media #{$sm} {
+				display: none;
+			}
+		}
+		.shape-two {
+			position: absolute;
+			right: 3%;
+			bottom: 160px;
+			z-index: -1;
+			max-width: 250px;
+			@media #{$md} {
+				max-width: 180px;
+			}
+		}
+	}
+
+	.menu-loop {
+		.single-menu-box {
+			align-items: center;
+			margin-bottom: 20px;
+			padding-left: 120px;
+			position: relative;
+			@media #{$xsm} {
+				padding-left: 0;
+				padding-top: 140px;
+			}
+			.menu-desc {
+				position: relative;
+				@include transition(0.3s);
+				font-size: 14px;
+				color: $heading-color;
+				padding: 20px 85px 20px 30px;
+				@media #{$lg} {
+					padding: 20px 50px 20px 30px;
+				}
+				@media #{$tiny} {
+					padding: 20px 50px 20px 30px;
+				}
+				h4 {
+					font-size: 24px;
+					letter-spacing: -1px;
+					margin-bottom: 8px;
+				}
+				.menu-link {
+					position: absolute;
+					right: 20px;
+					top: 50%;
+					transform: translateY(-50%);
+					font-size: 24px;
+					color: $primary-color;
+					z-index: 2;
+					@include transition(0.3s);
+					visibility: hidden;
+					opacity: 0;
+				}
+			}
+			.menu-img {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 120px;
+				height: 100%;
+				background-size: cover;
+				background-position: center;
+				@media #{$xsm} {
+					height: 120px;
+					left: 30px;
+				}
+			}
+			&:hover .menu-desc {
+				background-color: $white;
+				.menu-link {
+					right: 40px;
+					visibility: visible;
+					opacity: 1;
+					@media #{$lg} {
+						right: 15px;
+					}
+					@media #{$tiny} {
+						right: 15px;
+					}
+				}
+			}
+			&.hover-drak:hover .menu-desc {
+				background-color: $heading-color;
+				&,
+				h4 a {
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+.gallery-wrap {
+	.gallery-popup {
+		overflow: hidden;
+		img {
+			@include transition(0.4s);
+		}
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+}

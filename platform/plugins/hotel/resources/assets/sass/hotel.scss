@@ -1,0 +1,24 @@
+.hotel-content-area {
+
+    .list-gallery-media-images > li {
+        float: left;
+        width: 15%;
+        padding: 3px;
+        position: relative;
+    }
+}
+
+.dates-calendar {
+    .fc-event {
+        border: none;
+        .fc-event-main-frame {
+            text-align: center;
+        }
+        .fc-event-title {
+            padding: 1px 5px;
+            border-radius: 2px;
+            color: #fff;
+            display: inline-block;
+        }
+    }
+}

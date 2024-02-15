@@ -1,0 +1,83 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Hotel Miranda Hoetel Resort Booking HTML Template
+    Template URI: https://webtend.biz/onitir
+    Author: WebTend
+    Author URI: https://www.webtend.com
+    Version: 1.0
+
+    Note: This is Main Style Scss File.
+-----------------------------------------------------------------------------------
+    CSS INDEX
+    ===================
+    Common
+    Header
+    -- Off canvas menu
+    -- Breadcrumb CSS
+    Banner
+    About
+    Room Tab
+    Call TO Action
+    Text Block
+    Testimonial
+    Latest Post
+    Core Feature
+    -- Dark Style
+    Room
+    -- Room Gird
+    -- Room List
+    -- Room Slider
+      -- Room Slider One
+      -- Room Slider Two
+    -- Room Details
+    Counter
+    Our Menu
+    Contact
+    -- Contact info box
+    Offers
+    Gallery
+    News
+    -- News Details
+    -- Pagination
+    -- Sidebars
+    Booking Form
+    Places
+    -- Places Details
+    Restaurant
+    Footer
+    -- Subscribe
+    -- Widgets
+    -- Copy Right
+    -- Back to top
+
+-----------------------------------------------------------------------------------*/
+
+@media (max-width: 991px) {
+    .nav-push-item, .nav-menu {
+        display: none;
+    }
+}
+
+@import 'default';
+@import 'variables';
+@import 'mixin';
+@import 'common';
+@import 'header';
+@import 'banner';
+@import 'about';
+@import 'roomtab';
+@import 'cta';
+@import 'text-block';
+@import 'testimonial';
+@import 'latest-post';
+@import 'feature';
+@import 'room';
+@import 'counter';
+@import 'menu';
+@import 'contact';
+@import 'offers_gallery';
+@import 'news';
+@import 'booking-form';
+@import 'places';
+@import 'restaurant';
+@import 'footer';
+@import 'custom';

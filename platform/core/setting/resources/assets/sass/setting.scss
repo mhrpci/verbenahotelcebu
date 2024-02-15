@@ -1,0 +1,35 @@
+.handle-tool-drag {
+    background: #f7f7f7;
+    height: 20px;
+    user-select: none;
+    cursor: row-resize;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    line-height: 14px;
+
+    &:before {
+        content: '\2261';
+        color: #999999;
+        position: absolute;
+        left: 50%;
+        font-size: 20px;
+    }
+
+    &:hover {
+        background: #f0f0f0;
+
+        &:before {
+            color: #000000;
+        }
+    }
+}
+
+.template-setting-on-off {
+    .form-group {
+        .onoffswitch {
+            float: none;
+            margin-right: 0;
+            display: inline-block;
+        }
+    }
+}

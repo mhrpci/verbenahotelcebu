@@ -1,0 +1,20 @@
+{
+    "name": "botble/shortcode",
+    "description": "Shortcode package for Botble CMS application",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Botble\\Shortcode\\": "src"
+        }
+    },
+    "require": {
+        "botble/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Botble\\Shortcode\\Providers\\ShortcodeServiceProvider"
+            ]
+        }
+    }
+}

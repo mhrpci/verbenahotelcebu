@@ -1,0 +1,134 @@
+/*=======  Places   =======*/
+.places-wrapper {
+	.places-maps {
+		width: 100%;
+		height: 700px;
+	}
+
+	.gm-style .gm-style-iw-c {
+		padding: 0;
+		border-radius: 0;
+	}
+	.gm-style .gm-style-iw-d {
+		overflow: hidden !important;
+		width: 290px;
+	}
+	.map-info-window {
+		.info-window-img {
+			width: 100%;
+			height: 190px;
+			background-size: cover;
+			background-position: center;
+		}
+		.info-content {
+			text-align: center;
+			padding: 20px 10px;
+			font-size: 14px;
+			h4 {
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+
+.places-boxes {
+	.place-box {
+		.place-bg-wrap {
+			overflow: hidden;
+			.place-bg {
+				background-size: cover;
+				background-position: center;
+				width: 100%;
+				height: 190px;
+				@media #{$xsm} {
+					height: 220px;
+				}
+				@include transition(0.3s);
+			}
+		}
+		&:hover {
+			.place-bg {
+				transform: scale(1.1);
+			}
+		}
+		.desc {
+			background-color: $white;
+			padding: 20px;
+			text-align: center;
+			@media #{$lg} {
+				padding: 20px 15px;
+			}
+			@media #{$md} {
+				padding: 20px 15px;
+			}
+			h4 {
+				font-size: 24px;
+				margin-bottom: 10px;
+				@media #{$lg} {
+					font-size: 22px;
+				}
+				@media #{$md} {
+					font-size: 22px;
+				}
+			}
+			.time {
+				font-family: $roboto;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+/*=======  Places Details  =======*/
+.places-details {
+	.title-wrap {
+		.place-cat {
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 700;
+			padding-bottom: 5px;
+			letter-spacing: 2px;
+			@media #{$xsm} {
+				letter-spacing: 0;
+				font-size: 12px;
+			}
+		}
+		h2 {
+			font-size: 48px;
+			@media #{$md} {
+				font-size: 38px;
+			}
+			@media #{$lsm} {
+				font-size: 32px;
+			}
+			@media #{$xsm} {
+				font-size: 28px;
+			}
+			@media #{$tiny} {
+				font-size: 24px;
+			}
+		}
+		.link {
+			a {
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: 700;
+				background-color: $white;
+				color: $text-color;
+				padding: 25px 45px;
+				letter-spacing: 2px;
+				@media #{$sm} {
+					padding: 20px 30px;
+				}
+				@media #{$xsm} {
+					padding: 15px 25px;
+					letter-spacing: 0px;
+				}
+				&:hover {
+					background-color: $primary-color;
+					color: $white;
+				}
+			}
+		}
+	}
+}

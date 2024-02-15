@@ -1,0 +1,22 @@
+// Font Family
+$archivo: var(--primary-font), sans-serif;
+$oldstan: var(--secondary-font), serif;
+$roboto: var(--tertiary-font), sans-serif;
+
+// Colors ---------------
+$primary-color: var(--color-1st);
+$text-color: #777;
+$heading-color: #222;
+$main-bg: #f8f8f8;
+$black: #111;
+$white: #fff;
+
+// Responsive Variables
+$xxl: '(min-width: 1600px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$lg: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: '(max-width: 767px)';
+$lsm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xsm: '(max-width: 575px)';
+$tiny: '(max-width: 399px)';

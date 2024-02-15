@@ -1,0 +1,77 @@
+/*=======  Latest Post   =======*/
+.latest-news {
+	.latest-post-box {
+		.post-img {
+			height: 260px;
+			width: 100%;
+			background-size: cover;
+			background-position: center;
+			@media #{$sm} {
+				height: 220px;
+			}
+		}
+		.post-desc {
+			background-color: $white;
+			padding: 40px 35px;
+			@media #{$lg} {
+				padding: 35px 25px;
+			}
+			@media #{$lsm} {
+				padding: 35px 18px;
+				font-size: 14px;
+			}
+			@media #{$tiny} {
+				padding: 35px 25px;
+				font-size: 14px;
+			}
+			.post-meta {
+				margin-bottom: 20px;
+				li {
+					display: inline-block;
+					margin-right: 20px;
+					@media #{$lg} {
+						margin-right: 5px;
+						font-size: 14px;
+					}
+					@media #{$md} {
+						margin-right: 10px;
+					}
+					@media #{$lsm} {
+						margin-right: 5px;
+						font-size: 12px;
+					}
+					@media #{$tiny} {
+						margin-right: 5px;
+						font-size: 12px;
+					}
+					a {
+						font-weight: 500;
+						color: $text-color;
+						i {
+							margin-right: 10px;
+						}
+					}
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			h4 {
+				font-size: 24px;
+				color: $black;
+				margin-bottom: 25px;
+				letter-spacing: -1px;
+				line-height: 1.4;
+				@media #{$lg} {
+					font-size: 22px;
+				}
+				@media #{$lsm} {
+					font-size: 20px;
+				}
+				@media #{$tiny} {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

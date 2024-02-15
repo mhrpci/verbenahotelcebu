@@ -1,0 +1,23 @@
+{
+    "name": "botble/slug",
+    "description": "Slug/Permalink for Botble CMS application",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Botble\\Slug\\": "src"
+        }
+    },
+    "require": {
+        "botble/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Botble\\Slug\\Providers\\SlugServiceProvider"
+            ],
+            "aliases": {
+                "SlugHelper": "Botble\\Slug\\Facades\\SlugHelperFacade"
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "botble/payment",
+    "description": "Payment plugin",
+    "type": "package",
+    "require": {
+        "doctrine/dbal": "^3.0",
+        "laravel/cashier": "^12.0",
+        "paypal/rest-api-sdk-php": "^1.14"
+    }
+}

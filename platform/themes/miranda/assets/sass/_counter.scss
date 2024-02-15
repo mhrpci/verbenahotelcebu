@@ -1,0 +1,85 @@
+/*=======  COUNTER CSS  =======*/
+.counter-section {
+	.counter-box {
+		margin-bottom: 50px;
+		@media #{$xsm} {
+			font-size: 12px;
+		}
+		.icon {
+			margin-bottom: 30px;
+			img {
+				max-width: 100px;
+			}
+		}
+		&,
+		h4 {
+			color: $white;
+			font-weight: 700;
+			font-family: $roboto;
+		}
+		h4 {
+			font-size: 60px;
+			word-spacing: 0;
+			.plus-icon {
+				font-size: 16px;
+			}
+			@media #{$xsm} {
+				font-size: 38px;
+			}
+		}
+		.title {
+			color: #999999;
+		}
+
+		&.box-layout {
+			@media #{$lg} {
+				font-size: 12px;
+			}
+		}
+
+		&.counter-box-two {
+			background-color: $white;
+			padding: 30px 40px 30px 120px;
+			position: relative;
+			margin-bottom: 30px;
+
+			@media #{$lg} {
+				padding: 30px 20px 30px 115px;
+			}
+
+			@media #{$sm} {
+				padding: 110px 25px 30px;
+			}
+
+			&,
+			h4 {
+				font-weight: 400;
+				color: $text-color;
+			}
+
+			.icon {
+				position: absolute;
+				top: 40px;
+				left: 40px;
+				font-size: 60px;
+				color: $primary-color;
+				margin: 0;
+				line-height: 1;
+				@media #{$lg} {
+					left: 30px;
+				}
+
+				@media #{$sm} {
+					top: 30px;
+					left: 25px;
+				}
+			}
+
+			h4 {
+				color: $heading-color;
+				letter-spacing: -1px;
+				font-family: $oldstan;
+			}
+		}
+	}
+}
